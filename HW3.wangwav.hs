@@ -3,6 +3,9 @@ module HW3 where
 import MiniMiniLogo
 import Render
 
+-- Wavelet Wang
+-- Sean Cramsey
+-- David Okubo
 
 --
 -- * Semantics of MiniMiniLogo
