@@ -80,7 +80,7 @@ prog (l:ls) stt = case cmd l stt of
 
 -- Dot Printer
 dotPrinter :: Int -> Int-> Prog
-dotPrinter x y = [Pen Up, Move x y, Pen Down, Move (x+1) (y), Move (x+1) (y+1), Move (x) (y+1), Move(x) (y)]
+dotPrinter x y = [Pen Up, Move x y, Pen Down, Move (x+1) (y), Move (x+1) (y+1), Move (x) (y+1), Move(x) (y) , Move (x+1) (y)]
 
 -- | This should be a MiniMiniLogo program that draws an amazing picture.
 --   Add as many helper functions as you want.
