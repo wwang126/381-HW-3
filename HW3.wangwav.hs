@@ -3,7 +3,7 @@ module HW3 where
 import MiniMiniLogo
 import Render
 
--- Wavelet Wang
+-- Wavelet Wang - wangwav
 -- Sean Cramsey
 -- David Okubo
 
