@@ -70,8 +70,9 @@ prog :: Prog -> State -> (State, [Line])
 prog [] stt = (stt,[])
 -- if not go thru list
 prog (l:ls) stt = case cmd l stt of
-    (ps, Just ml) ->
-    (ps, Nothing) -> prog ls ns
+    (ps, Just ml) -> (\(stt, ls) -> (stt, ml:ls)) $ prog ls ps
+    (ps, Nothing) -> prog ls ps
+    
 
 
 --
