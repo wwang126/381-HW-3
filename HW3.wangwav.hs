@@ -53,8 +53,10 @@ draw p = let (_,ls) = prog p start in toHTML ls
 --   ((Down,(4,5)),Just ((2,3),(4,5)))
 --
 cmd :: Cmd -> State -> (State, Maybe Line)
-cmd = undefined
-
+cmd (Pen is) (_, pnt) = ((is,pnt),Nothing)
+cmd (Move x y) (mode, pnt) = case mode of
+                            Up -> ((mode,(x,y)),Nothing)
+                            Down -> ((mode,(x,y)),Just (pnt,(x,y)))
 
 -- | Semantic function for Prog.
 --
