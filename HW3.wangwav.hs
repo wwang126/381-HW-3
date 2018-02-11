@@ -84,4 +84,8 @@ amazing :: Prog
 amazing = undefined
 
 dotPrinter :: Int -> Int-> Prog
+<<<<<<< Updated upstream
 dotPrinter x y = [Pen Up, Move x y, Pen Down, Move (x+1) (y)]
+=======
+dotPrinter x y = [Pen Up, Move x y, Pen Down, Move (x) (y)]
+>>>>>>> Stashed changes
