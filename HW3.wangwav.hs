@@ -3,8 +3,13 @@ module HW3 where
 import MiniMiniLogo
 import Render
 
+<<<<<<< HEAD
 -- Wavelet Wang
 -- Sean Cramsey - cramseys
+=======
+-- Wavelet Wang - wangwav
+-- Sean Cramsey
+>>>>>>> e4cdcdc27d9930b9a85503c6321b29aea1cd933b
 -- David Okubo
 
 --
