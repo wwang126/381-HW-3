@@ -66,7 +66,12 @@ cmd (Move x y) (mode, pnt) = case mode of
 --   >>> prog (steps 2 0 0) start
 --   ((Down,(2,2)),[((0,0),(0,1)),((0,1),(1,1)),((1,1),(1,2)),((1,2),(2,2))])
 prog :: Prog -> State -> (State, [Line])
-prog = undefined
+-- if empty list just return current state and empty list
+prog [] stt = (stt,[])
+-- if not go thru list
+prog (l:ls) stt = case cmd l stt of
+    (ps, Just ml) ->
+    (ps, Nothing) -> prog ls ns
 
 
 --
