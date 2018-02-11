@@ -4,7 +4,7 @@ import MiniMiniLogo
 import Render
 
 -- Wavelet Wang
--- Sean Cramsey
+-- Sean Cramsey - cramseys
 -- David Okubo
 
 --
