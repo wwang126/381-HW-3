@@ -1,17 +1,17 @@
 import PIL
 import numpy
 from PIL import Image
-im = Image.open("128Thresh210.png")
+im = Image.open("200Thresh215.png")
 
 f = open("Image.txt", "w")
-imgW = 128
+imgW = 400
 x = 0
-y = 128
+y = 400
 for pixel in iter(im.getdata()):
     if(x == imgW):
         x = 0
-        y -= 1
+        y -= 2
     if pixel == 0:
         f.write("dotPrinter " + str(x) +  "  " + str(y) + " ++ ")
-    x += 1
+    x += 2
 f.close
