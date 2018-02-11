@@ -5,7 +5,7 @@ import Render
 
 -- Wavelet Wang - wangwav
 -- Sean Cramsey - cramseys
--- David Okubo
+-- David Okubo - okubod
 
 --
 -- * Semantics of MiniMiniLogo
