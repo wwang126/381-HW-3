@@ -72,7 +72,6 @@ prog [] stt = (stt,[])
 prog (l:ls) stt = case cmd l stt of
     (ps, Just ml) -> (\(stt, ls) -> (stt, ml:ls)) $ prog ls ps
     (ps, Nothing) -> prog ls ps
-    
 
 
 --
