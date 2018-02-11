@@ -82,3 +82,6 @@ prog (l:ls) stt = case cmd l stt of
 --   Add as many helper functions as you want.
 amazing :: Prog
 amazing = undefined
+
+dotPrinter :: Int -> Int-> Prog
+dotPrinter x y = [Pen Up, Move x y, Pen Down, Move (x+1) (y)]
